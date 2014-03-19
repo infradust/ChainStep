@@ -80,7 +80,12 @@
 - (StepPlaceholder*) placeholderWithPath:(NSIndexPath*)data
                                  context:(NSManagedObjectContext*)context
 {
-    NSManagedObjectContext* step = [NSEntityDescription insertNewObjectForEntityForName:@"Step" inManagedObjectContext:context];
+    Step* step = [NSEntityDescription insertNewObjectForEntityForName:@"Step" inManagedObjectContext:context];
+    NSMutableString* s = [NSMutableString new];
+    for (NSUInteger i = 0; i < data.length; ++i) {
+        [s appendFormat:@"%u ",[data indexAtPosition:i]];
+    }
+    step.content = s;
     NSManagedObject* obj = [NSEntityDescription insertNewObjectForEntityForName:@"StepPlaceholder" inManagedObjectContext:context];
     [obj setValue:data forKey:@"indexPath"];
     [obj setValue:step forKey:@"step"];
@@ -90,21 +95,43 @@
 - (void) testMultiDimArrayInContext:(NSManagedObjectContext*)context
 {
     Chain* c = [NSEntityDescription insertNewObjectForEntityForName:@"Chain" inManagedObjectContext:context];
-    for (NSUInteger i = 0; i<5; ++i) {
-        NSUInteger depth = 3;
-        
-        NSMutableString* s = [NSMutableString new];
-        NSIndexPath* path = [NSIndexPath new];
-        for (NSUInteger j = 0; j < depth; ++j) {
-            NSUInteger tmp = arc4random() % 3;
-            [s appendFormat:@"%u ",tmp];
-            path = [path indexPathByAddingIndex:tmp];
-        }
-        NSLog(@"added: %@",s);
-        StepPlaceholder* sp = [self placeholderWithPath:path
-                                                context:context];
-        sp.chain = c;
-    }
+    NSMutableArray* all = [NSMutableArray new];
+    StepPlaceholder* sp = nil;
+    NSIndexPath* path = nil;
+    
+    path = [NSIndexPath indexPathWithIndex:1];
+    sp = [self placeholderWithPath:path context:context];
+    sp.chain = c;
+    [all addObject:sp];
+
+    path = [NSIndexPath indexPathWithIndex:256];
+    sp = [self placeholderWithPath:path context:context];
+    sp.chain = c;
+    [all addObject:sp];
+
+    path = [NSIndexPath indexPathWithIndex:512];
+    path = [path indexPathByAddingIndex:1];
+    sp = [self placeholderWithPath:path context:context];
+    sp.chain = c;
+    [all addObject:sp];
+
+    path = [NSIndexPath indexPathWithIndex:512];
+    path = [path indexPathByAddingIndex:16];
+    sp = [self placeholderWithPath:path context:context];
+    sp.chain = c;
+    [all addObject:sp];
+
+    path = [NSIndexPath indexPathWithIndex:512];
+    path = [path indexPathByAddingIndex:256];
+    sp = [self placeholderWithPath:path context:context];
+    sp.chain = c;
+    [all addObject:sp];
+
+    path = [NSIndexPath indexPathWithIndex:2];
+    path = [path indexPathByAddingIndex:1];
+    sp = [self placeholderWithPath:path context:context];
+    sp.chain = c;
+    [all addObject:sp];
     
     [context save:nil];
     
