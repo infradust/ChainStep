@@ -8,7 +8,7 @@
 
 #import "StepPlaceholder+utils.h"
 #import "Chain+utils.h"
-NSUInteger tNSUInteger(NSUInteger input) {
+NSUInteger flipNSUInteger(NSUInteger input) {
     uint8_t* buff = (uint8_t*)(&input);
     uint8_t tmp;
     size_t size = sizeof(input);
@@ -34,7 +34,7 @@ NSUInteger tNSUInteger(NSUInteger input) {
             NSUInteger* mbytes = (NSUInteger*)malloc(sizeof(NSUInteger)*length);
             const NSUInteger* bytes = [self.binaryIndexPath bytes];
             for (NSUInteger i = 0; i < length; ++i) {
-                mbytes[i] = tNSUInteger(bytes[i]);
+                mbytes[i] = flipNSUInteger(bytes[i]);
             }
             indexPath = [NSIndexPath indexPathWithIndexes:mbytes
                                                    length:length];
@@ -57,7 +57,7 @@ NSUInteger tNSUInteger(NSUInteger input) {
             NSUInteger* bytes = (NSUInteger*)malloc([indexPath length]*sizeof(NSUInteger));
             [indexPath getIndexes:bytes];
             for (NSUInteger i = 0; i < indexPath.length; ++i) {
-                bytes[i] = tNSUInteger(bytes[i]);
+                bytes[i] = flipNSUInteger(bytes[i]);
             }
             self.binaryIndexPath = [NSData dataWithBytesNoCopy:bytes
                                                         length:[indexPath length]*sizeof(NSUInteger)];
