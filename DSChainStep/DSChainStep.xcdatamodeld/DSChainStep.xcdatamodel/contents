@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Chain" representedClassName="Chain">
+        <attribute name="steps" optional="YES" transient="YES" syncable="YES"/>
+        <relationship name="stepPlaceholders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="StepPlaceholder" inverseName="chain" inverseEntity="StepPlaceholder" syncable="YES"/>
+        <userInfo/>
+    </entity>
+    <entity name="Step" representedClassName="Step" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stepPlaceholders" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="StepPlaceholder" inverseName="step" inverseEntity="StepPlaceholder" syncable="YES"/>
+    </entity>
+    <entity name="StepPlaceholder" representedClassName="StepPlaceholder" syncable="YES">
+        <attribute name="binaryIndexPath" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="indexPath" optional="YES" transient="YES" syncable="YES"/>
+        <relationship name="chain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chain" inverseName="stepPlaceholders" inverseEntity="Chain" syncable="YES"/>
+        <relationship name="step" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Step" inverseName="stepPlaceholders" inverseEntity="Step" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Chain" positionX="261" positionY="189" width="128" height="73"/>
+        <element name="StepPlaceholder" positionX="261" positionY="189" width="128" height="103"/>
+        <element name="Step" positionX="270" positionY="198" width="128" height="73"/>
+    </elements>
+</model>

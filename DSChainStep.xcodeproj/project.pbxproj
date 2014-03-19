@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C417D57F18D92BAD004E387E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C417D57E18D92BAD004E387E /* Foundation.framework */; };
+		C417D58118D92BAD004E387E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C417D58018D92BAD004E387E /* CoreGraphics.framework */; };
+		C417D58318D92BAD004E387E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C417D58218D92BAD004E387E /* UIKit.framework */; };
+		C417D58518D92BAD004E387E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C417D58418D92BAD004E387E /* CoreData.framework */; };
+		C417D58B18D92BAD004E387E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C417D58918D92BAD004E387E /* InfoPlist.strings */; };
+		C417D58D18D92BAD004E387E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D58C18D92BAD004E387E /* main.m */; };
+		C417D59118D92BAD004E387E /* DSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D59018D92BAD004E387E /* DSAppDelegate.m */; };
+		C417D59418D92BAD004E387E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C417D59218D92BAD004E387E /* Main.storyboard */; };
+		C417D59718D92BAD004E387E /* DSChainStep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C417D59518D92BAD004E387E /* DSChainStep.xcdatamodeld */; };
+		C417D59A18D92BAD004E387E /* DSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D59918D92BAD004E387E /* DSMasterViewController.m */; };
+		C417D59D18D92BAD004E387E /* DSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D59C18D92BAD004E387E /* DSDetailViewController.m */; };
+		C417D59F18D92BAD004E387E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C417D59E18D92BAD004E387E /* Images.xcassets */; };
+		C417D5A618D92BAD004E387E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C417D5A518D92BAD004E387E /* XCTest.framework */; };
+		C417D5A718D92BAD004E387E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C417D57E18D92BAD004E387E /* Foundation.framework */; };
+		C417D5A818D92BAD004E387E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C417D58218D92BAD004E387E /* UIKit.framework */; };
+		C417D5A918D92BAD004E387E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C417D58418D92BAD004E387E /* CoreData.framework */; };
+		C417D5B118D92BAD004E387E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C417D5AF18D92BAD004E387E /* InfoPlist.strings */; };
+		C417D5B318D92BAD004E387E /* DSChainStepTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D5B218D92BAD004E387E /* DSChainStepTests.m */; };
+		C417D5BE18D92DA7004E387E /* Step.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D5BD18D92DA7004E387E /* Step.m */; };
+		C417D5C118D92DA7004E387E /* StepPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D5C018D92DA7004E387E /* StepPlaceholder.m */; };
+		C417D5C418D92DA7004E387E /* Chain.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D5C318D92DA7004E387E /* Chain.m */; };
+		C417D5C718D92E01004E387E /* Chain+utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D5C618D92E01004E387E /* Chain+utils.m */; };
+		C417D5CA18D92E49004E387E /* StepPlaceholder+utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C417D5C918D92E49004E387E /* StepPlaceholder+utils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C417D5AA18D92BAD004E387E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C417D57318D92BAD004E387E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C417D57A18D92BAD004E387E;
+			remoteInfo = DSChainStep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C417D57B18D92BAD004E387E /* DSChainStep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSChainStep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C417D57E18D92BAD004E387E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C417D58018D92BAD004E387E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C417D58218D92BAD004E387E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C417D58418D92BAD004E387E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C417D58818D92BAD004E387E /* DSChainStep-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSChainStep-Info.plist"; sourceTree = "<group>"; };
+		C417D58A18D92BAD004E387E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C417D58C18D92BAD004E387E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C417D58E18D92BAD004E387E /* DSChainStep-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DSChainStep-Prefix.pch"; sourceTree = "<group>"; };
+		C417D58F18D92BAD004E387E /* DSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSAppDelegate.h; sourceTree = "<group>"; };
+		C417D59018D92BAD004E387E /* DSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSAppDelegate.m; sourceTree = "<group>"; };
+		C417D59318D92BAD004E387E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C417D59618D92BAD004E387E /* DSChainStep.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DSChainStep.xcdatamodel; sourceTree = "<group>"; };
+		C417D59818D92BAD004E387E /* DSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSMasterViewController.h; sourceTree = "<group>"; };
+		C417D59918D92BAD004E387E /* DSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSMasterViewController.m; sourceTree = "<group>"; };
+		C417D59B18D92BAD004E387E /* DSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSDetailViewController.h; sourceTree = "<group>"; };
+		C417D59C18D92BAD004E387E /* DSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSDetailViewController.m; sourceTree = "<group>"; };
+		C417D59E18D92BAD004E387E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C417D5A418D92BAD004E387E /* DSChainStepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSChainStepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C417D5A518D92BAD004E387E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C417D5AE18D92BAD004E387E /* DSChainStepTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DSChainStepTests-Info.plist"; sourceTree = "<group>"; };
+		C417D5B018D92BAD004E387E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C417D5B218D92BAD004E387E /* DSChainStepTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSChainStepTests.m; sourceTree = "<group>"; };
+		C417D5BC18D92DA7004E387E /* Step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Step.h; sourceTree = "<group>"; };
+		C417D5BD18D92DA7004E387E /* Step.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Step.m; sourceTree = "<group>"; };
+		C417D5BF18D92DA7004E387E /* StepPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepPlaceholder.h; sourceTree = "<group>"; };
+		C417D5C018D92DA7004E387E /* StepPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepPlaceholder.m; sourceTree = "<group>"; };
+		C417D5C218D92DA7004E387E /* Chain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chain.h; sourceTree = "<group>"; };
+		C417D5C318D92DA7004E387E /* Chain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chain.m; sourceTree = "<group>"; };
+		C417D5C518D92E01004E387E /* Chain+utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Chain+utils.h"; sourceTree = "<group>"; };
+		C417D5C618D92E01004E387E /* Chain+utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Chain+utils.m"; sourceTree = "<group>"; };
+		C417D5C818D92E49004E387E /* StepPlaceholder+utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StepPlaceholder+utils.h"; sourceTree = "<group>"; };
+		C417D5C918D92E49004E387E /* StepPlaceholder+utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StepPlaceholder+utils.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C417D57818D92BAD004E387E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C417D58118D92BAD004E387E /* CoreGraphics.framework in Frameworks */,
+				C417D58518D92BAD004E387E /* CoreData.framework in Frameworks */,
+				C417D58318D92BAD004E387E /* UIKit.framework in Frameworks */,
+				C417D57F18D92BAD004E387E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C417D5A118D92BAD004E387E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C417D5A618D92BAD004E387E /* XCTest.framework in Frameworks */,
+				C417D5A918D92BAD004E387E /* CoreData.framework in Frameworks */,
+				C417D5A818D92BAD004E387E /* UIKit.framework in Frameworks */,
+				C417D5A718D92BAD004E387E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C417D57218D92BAD004E387E = {
+			isa = PBXGroup;
+			children = (
+				C417D58618D92BAD004E387E /* DSChainStep */,
+				C417D5AC18D92BAD004E387E /* DSChainStepTests */,
+				C417D57D18D92BAD004E387E /* Frameworks */,
+				C417D57C18D92BAD004E387E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C417D57C18D92BAD004E387E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C417D57B18D92BAD004E387E /* DSChainStep.app */,
+				C417D5A418D92BAD004E387E /* DSChainStepTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C417D57D18D92BAD004E387E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C417D57E18D92BAD004E387E /* Foundation.framework */,
+				C417D58018D92BAD004E387E /* CoreGraphics.framework */,
+				C417D58218D92BAD004E387E /* UIKit.framework */,
+				C417D58418D92BAD004E387E /* CoreData.framework */,
+				C417D5A518D92BAD004E387E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C417D58618D92BAD004E387E /* DSChainStep */ = {
+			isa = PBXGroup;
+			children = (
+				C417D58F18D92BAD004E387E /* DSAppDelegate.h */,
+				C417D59018D92BAD004E387E /* DSAppDelegate.m */,
+				C417D59218D92BAD004E387E /* Main.storyboard */,
+				C417D59818D92BAD004E387E /* DSMasterViewController.h */,
+				C417D59918D92BAD004E387E /* DSMasterViewController.m */,
+				C417D59B18D92BAD004E387E /* DSDetailViewController.h */,
+				C417D59C18D92BAD004E387E /* DSDetailViewController.m */,
+				C417D59E18D92BAD004E387E /* Images.xcassets */,
+				C417D59518D92BAD004E387E /* DSChainStep.xcdatamodeld */,
+				C417D5C218D92DA7004E387E /* Chain.h */,
+				C417D5C318D92DA7004E387E /* Chain.m */,
+				C417D5BF18D92DA7004E387E /* StepPlaceholder.h */,
+				C417D5C018D92DA7004E387E /* StepPlaceholder.m */,
+				C417D5BC18D92DA7004E387E /* Step.h */,
+				C417D5BD18D92DA7004E387E /* Step.m */,
+				C417D58718D92BAD004E387E /* Supporting Files */,
+				C417D5C518D92E01004E387E /* Chain+utils.h */,
+				C417D5C618D92E01004E387E /* Chain+utils.m */,
+				C417D5C818D92E49004E387E /* StepPlaceholder+utils.h */,
+				C417D5C918D92E49004E387E /* StepPlaceholder+utils.m */,
+			);
+			path = DSChainStep;
+			sourceTree = "<group>";
+		};
+		C417D58718D92BAD004E387E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C417D58818D92BAD004E387E /* DSChainStep-Info.plist */,
+				C417D58918D92BAD004E387E /* InfoPlist.strings */,
+				C417D58C18D92BAD004E387E /* main.m */,
+				C417D58E18D92BAD004E387E /* DSChainStep-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C417D5AC18D92BAD004E387E /* DSChainStepTests */ = {
+			isa = PBXGroup;
+			children = (
+				C417D5B218D92BAD004E387E /* DSChainStepTests.m */,
+				C417D5AD18D92BAD004E387E /* Supporting Files */,
+			);
+			path = DSChainStepTests;
+			sourceTree = "<group>";
+		};
+		C417D5AD18D92BAD004E387E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C417D5AE18D92BAD004E387E /* DSChainStepTests-Info.plist */,
+				C417D5AF18D92BAD004E387E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C417D57A18D92BAD004E387E /* DSChainStep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C417D5B618D92BAD004E387E /* Build configuration list for PBXNativeTarget "DSChainStep" */;
+			buildPhases = (
+				C417D57718D92BAD004E387E /* Sources */,
+				C417D57818D92BAD004E387E /* Frameworks */,
+				C417D57918D92BAD004E387E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSChainStep;
+			productName = DSChainStep;
+			productReference = C417D57B18D92BAD004E387E /* DSChainStep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C417D5A318D92BAD004E387E /* DSChainStepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C417D5B918D92BAD004E387E /* Build configuration list for PBXNativeTarget "DSChainStepTests" */;
+			buildPhases = (
+				C417D5A018D92BAD004E387E /* Sources */,
+				C417D5A118D92BAD004E387E /* Frameworks */,
+				C417D5A218D92BAD004E387E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C417D5AB18D92BAD004E387E /* PBXTargetDependency */,
+			);
+			name = DSChainStepTests;
+			productName = DSChainStepTests;
+			productReference = C417D5A418D92BAD004E387E /* DSChainStepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C417D57318D92BAD004E387E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SO;
+				TargetAttributes = {
+					C417D5A318D92BAD004E387E = {
+						TestTargetID = C417D57A18D92BAD004E387E;
+					};
+				};
+			};
+			buildConfigurationList = C417D57618D92BAD004E387E /* Build configuration list for PBXProject "DSChainStep" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C417D57218D92BAD004E387E;
+			productRefGroup = C417D57C18D92BAD004E387E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C417D57A18D92BAD004E387E /* DSChainStep */,
+				C417D5A318D92BAD004E387E /* DSChainStepTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C417D57918D92BAD004E387E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C417D59F18D92BAD004E387E /* Images.xcassets in Resources */,
+				C417D58B18D92BAD004E387E /* InfoPlist.strings in Resources */,
+				C417D59418D92BAD004E387E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C417D5A218D92BAD004E387E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C417D5B118D92BAD004E387E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C417D57718D92BAD004E387E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C417D59D18D92BAD004E387E /* DSDetailViewController.m in Sources */,
+				C417D5CA18D92E49004E387E /* StepPlaceholder+utils.m in Sources */,
+				C417D5C718D92E01004E387E /* Chain+utils.m in Sources */,
+				C417D5BE18D92DA7004E387E /* Step.m in Sources */,
+				C417D5C118D92DA7004E387E /* StepPlaceholder.m in Sources */,
+				C417D58D18D92BAD004E387E /* main.m in Sources */,
+				C417D59A18D92BAD004E387E /* DSMasterViewController.m in Sources */,
+				C417D5C418D92DA7004E387E /* Chain.m in Sources */,
+				C417D59118D92BAD004E387E /* DSAppDelegate.m in Sources */,
+				C417D59718D92BAD004E387E /* DSChainStep.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C417D5A018D92BAD004E387E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C417D5B318D92BAD004E387E /* DSChainStepTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C417D5AB18D92BAD004E387E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C417D57A18D92BAD004E387E /* DSChainStep */;
+			targetProxy = C417D5AA18D92BAD004E387E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C417D58918D92BAD004E387E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C417D58A18D92BAD004E387E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C417D59218D92BAD004E387E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C417D59318D92BAD004E387E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C417D5AF18D92BAD004E387E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C417D5B018D92BAD004E387E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C417D5B418D92BAD004E387E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C417D5B518D92BAD004E387E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C417D5B718D92BAD004E387E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSChainStep/DSChainStep-Prefix.pch";
+				INFOPLIST_FILE = "DSChainStep/DSChainStep-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C417D5B818D92BAD004E387E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSChainStep/DSChainStep-Prefix.pch";
+				INFOPLIST_FILE = "DSChainStep/DSChainStep-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C417D5BA18D92BAD004E387E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSChainStep.app/DSChainStep";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSChainStep/DSChainStep-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DSChainStepTests/DSChainStepTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C417D5BB18D92BAD004E387E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DSChainStep.app/DSChainStep";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DSChainStep/DSChainStep-Prefix.pch";
+				INFOPLIST_FILE = "DSChainStepTests/DSChainStepTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C417D57618D92BAD004E387E /* Build configuration list for PBXProject "DSChainStep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C417D5B418D92BAD004E387E /* Debug */,
+				C417D5B518D92BAD004E387E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C417D5B618D92BAD004E387E /* Build configuration list for PBXNativeTarget "DSChainStep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C417D5B718D92BAD004E387E /* Debug */,
+				C417D5B818D92BAD004E387E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C417D5B918D92BAD004E387E /* Build configuration list for PBXNativeTarget "DSChainStepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C417D5BA18D92BAD004E387E /* Debug */,
+				C417D5BB18D92BAD004E387E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C417D59518D92BAD004E387E /* DSChainStep.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C417D59618D92BAD004E387E /* DSChainStep.xcdatamodel */,
+			);
+			currentVersion = C417D59618D92BAD004E387E /* DSChainStep.xcdatamodel */;
+			path = DSChainStep.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C417D57318D92BAD004E387E /* Project object */;
+}
